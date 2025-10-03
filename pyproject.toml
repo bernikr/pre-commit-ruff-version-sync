@@ -12,3 +12,27 @@ dev = [
     "pre-commit>=4.3.0",
     "ruff>=0.13.3",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+ruff-version-sync = "main:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+preview = true
+select = ["ALL"]
+ignore = [
+    "D",      # pydocstyle
+    "CPY",    # flake8-copyright
+]
+
+[tool.mypy]
+strict = true
+allow_redefinition = true
+allow_redefinition_new = true
+local_partial_types = true

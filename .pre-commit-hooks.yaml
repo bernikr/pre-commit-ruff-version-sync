@@ -1,0 +1,6 @@
+- id: ruff-version-sync
+  name: Ruff Version Sync
+  description: This hook ensures that the ruff version in the pre-commit config matches the version in uv.lock
+  entry: ruff-version-sync
+  language: python
+  files: ^(uv\.lock|\.pre-commit-config.yaml)$
