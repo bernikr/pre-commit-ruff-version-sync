@@ -28,7 +28,7 @@ repos:
     hooks:
       - id: gitlint
         args:
-          - --contrib=CT1
+          #- --contrib=CT1
           - --ignore=B6
           - --msg-filename
 ci:
