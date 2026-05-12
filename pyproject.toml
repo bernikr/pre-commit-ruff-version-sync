@@ -5,23 +5,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "pyyaml>=6.0.3",
+  "pyyaml>=6.0.3",
 ]
 
 [dependency-groups]
 dev = [
-    "mypy>=1.18.2",
-    "pre-commit>=4.3.0",
-    "ruff>=0.13.3",
-    "types-pyyaml>=6.0.12.20250915",
+  "mypy>=1.18.2",
+  "prek>=0.3.13",
+  "ruff>=0.13.3",
+  "types-pyyaml>=6.0.12.20250915",
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = [
+  "setuptools>=61.0",
+]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["sync"]
+py-modules = [
+  "sync",
+]
 
 [project.scripts]
 ruff-version-sync = "sync:main"
@@ -33,9 +37,9 @@ line-length = 120
 preview = true
 select = ["ALL"]
 ignore = [
-    "D",      # pydocstyle
-    "CPY",    # flake8-copyright
-    "T201",   # print found
+  "D",    # pydocstyle
+  "CPY",  # flake8-copyright
+  "T201", # print found
 ]
 
 [tool.mypy]
