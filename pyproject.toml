@@ -10,11 +10,9 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "gitpython>=3.1.45",
     "mypy>=1.18.2",
     "pre-commit>=4.3.0",
     "ruff>=0.13.3",
-    "semver>=3.0.4",
     "types-pyyaml>=6.0.12.20250915",
 ]
 
